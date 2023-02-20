@@ -1,0 +1,109 @@
+.why {
+	width: 100%;
+	height: 85vh;
+	position: relative;
+	z-index: 0;
+	background-color: $LightGrayishBlue;
+
+	&__description {
+		width: 50%;
+		margin-left: 9.6rem;
+		padding: 4rem 0 20px;
+
+		h1 {
+			font-size: 40px;
+			font-weight: 300;
+			padding: 1.5rem 0;
+		}
+		p {
+			width: 80%;
+		}
+	}
+
+	.why-items {
+		gap: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0 15px;
+		margin: 1.5rem 8.6rem;
+
+		&__item {
+			text-align: left;
+			display: flex;
+			flex-direction: column;
+			gap: 27px;
+			width: 100%;
+
+			&__logo {
+				width: 90px;
+				height: 90px;
+			}
+
+			&__h {
+				font-weight: 300;
+			}
+
+			&__p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include media-md {
+	.why {
+		min-height: 220vh;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		&__description {
+			margin-right: 9rem;
+			margin-top: -4rem;
+			margin-bottom: 3rem;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 0 10rem;
+
+			h1 {
+				width: 200%;
+				font-size: 40px;
+				font-weight: 300;
+			}
+			p {
+				text-align: center;
+				align-items: center;
+				width: 250%;
+			}
+		}
+		.why-items {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+
+			&__item {
+				text-align: center;
+				align-items: center;
+				width: 100%;
+
+				&__h {
+					text-align: center;
+					width: 100%;
+					font-weight: 300;
+				}
+
+				&__p {
+					text-align: center;
+					width: 80%;
+				}
+			}
+		}
+	}
+}

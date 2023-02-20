@@ -1,0 +1,23 @@
+@import 'config';
+@import 'resets';
+@import 'header';
+@import 'home';
+@import 'why';
+@import 'articles';
+@import 'footer';
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+p,
+h3 {
+	color: $GrayishBlue;
+	line-height: 1.5;
+}
+
+h1,
+h2 {
+	color: $DarkBlue;
+}

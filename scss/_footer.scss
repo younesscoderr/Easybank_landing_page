@@ -1,0 +1,85 @@
+.footer {
+	width: 100%;
+	height: 35vh;
+	background-color: $DarkBlue;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	&__about-us {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		margin-left: 2rem;
+
+		.logo {
+			color: $White;
+		}
+
+		.social-icons {
+			display: flex;
+			gap: 15px;
+
+			.icon {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+	.about-us-tags {
+		display: flex;
+		align-items: center;
+		gap: 10rem;
+		.tags1,
+		.tags2 {
+			gap: 20px;
+			flex-direction: column;
+			display: flex;
+
+			a {
+				text-decoration: none;
+				color: $GrayishBlue;
+
+				&:hover {
+					color: rgba($LimeGreen, 0.6);
+				}
+			}
+		}
+	}
+
+	.copy {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		margin-right: 2rem;
+		gap: 20px;
+
+		.btn {
+			margin-left: 3rem;
+		}
+		.copy-right {
+			padding-right: 1rem;
+			color: $GrayishBlue;
+			text-align: left;
+		}
+	}
+}
+
+@include media-md {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 90vh;
+		text-align: center;
+		justify-content: space-around;
+
+		&__about-us {
+			margin-left: -0.5rem;
+		}
+
+		.about-us-tags {
+			flex-direction: column;
+			gap: 1rem;
+		}
+	}
+}

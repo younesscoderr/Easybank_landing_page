@@ -1,0 +1,81 @@
+.hero {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	background-color: $VeryLightGray;
+	text-align: start;
+
+	.hero-text {
+		padding-left: 9.6rem;
+		padding-top: 12rem;
+		width: 40%;
+
+		&__h {
+			font-size: 50px;
+			width: 100%;
+			font-weight: 300;
+		}
+
+		&__p {
+			font-size: 16px;
+			padding: 1rem 0 1.5rem;
+			width: 93%;
+		}
+	}
+
+	&__img {
+		.img-one {
+			overflow: hidden;
+			position: absolute;
+			top: -5rem;
+			right: -18rem;
+			width: 1120px;
+			height: 720px;
+			z-index: 5;
+		}
+		.img-two {
+			overflow: hidden;
+			position: absolute;
+			top: -2rem;
+			right: -5rem;
+			z-index: 100;
+			width: 667px;
+			height: 834px;
+		}
+	}
+}
+@include media-md {
+	.hero {
+		width: 100%;
+		height: 150vh;
+		&__img {
+			.img-one {
+				width: 100%px;
+				height: 500px;
+			}
+			.img-two {
+				width: 467px;
+				height: 620px;
+				position: absolute;
+				top: -2rem;
+				right: 8px;
+			}
+		}
+
+		.hero-text {
+			margin-right: 4rem;
+			margin-left: -4rem;
+			padding-top: 38rem;
+
+			width: 100%;
+			text-align: center;
+
+			&__h {
+				font-size: 40px;
+				padding-right: 20px;
+
+				width: 100%;
+			}
+		}
+	}
+}
